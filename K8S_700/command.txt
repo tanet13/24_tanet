@@ -1,0 +1,18 @@
+kubectl apply -f .\sample-pod.yml
+
+kubectl get all
+
+docker pull imsuriyapi/todo-app:v4
+
+kubectl delete pods 
+
+kubectl delete pods --all
+
+kubectl apply -f .\client-deployment.yml
+
+kubectl delete deployments client-deployment
+
+kubectl apply -f .\client-service.yml
+
+kubectl delete Service client-server
+
